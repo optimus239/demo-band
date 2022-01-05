@@ -151,11 +151,21 @@ html{
     font-size: 12px;
 }
 
-#header .search-btn{
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-btn,
+#header .mobile-menu-btn{
     float: right;
+    padding: 0 21px;
     
 }
 
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     line-height: 46.5px;
@@ -165,6 +175,14 @@ html{
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
 }
 
 #slider{
