@@ -1,10 +1,17 @@
-/* PC */
-@media (min-width: 1024px) {
+
+/* 
+    PC: >= 1024px
+    Tablet: >=740px & <1024px
+    Mobile: <740px
+*/
+
+/* PC 1024px=64em */
+@media (min-width: 64em) {
 
 }
 
-/* Tablet & Mobile */
-@media (max-width: 1023px) {
+/* Tablet & Mobile 1023px=63.9375em */
+@media (max-width: 63.9375em) {
     #nav .subnav li a {
         padding: 5px 12px;
     }
@@ -15,10 +22,15 @@
     
     .contact-form .form-control {
         padding: 15px;
+        font-size: 16px;
     }
 
     .contact-info {
         line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 17px;
     }
 
     .social-list {
@@ -37,13 +49,13 @@
 
 }
 
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+/* Tablet 740px=46.25em - 1023px=63.9375em */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
 
 }
 
-/* Mobile */
-@media (max-width: 740px) {
+/* Mobile 739px=46.1875em*/
+@media (max-width: 46.1875em) {
     .s-full-width,
     .s-col-full {
         width: 100% !important;
